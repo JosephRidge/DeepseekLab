@@ -4,4 +4,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse("Welcome to the Jungle")
+    context = {} # purpose if hold a refe to the data
+    return render (request,"animalsApp/home.html", context)

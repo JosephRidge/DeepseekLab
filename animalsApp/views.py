@@ -6,3 +6,7 @@ from django.http import HttpResponse
 def home(request):
     context = {} # purpose if hold a refe to the data
     return render (request,"animalsApp/home.html", context)
+
+def about(request):
+    context={}
+    return render(request,"animalsApp/about.html", context)

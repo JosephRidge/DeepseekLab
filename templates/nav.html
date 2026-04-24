@@ -1,6 +1,10 @@
+{% load static %}
 <nav class="navbar navbar-expand-lg bg-warning">
     <div class="container">
-      <a class="navbar-brand" href="#">WILD</a>
+      <a class="navbar-brand" href="{% url 'animal-home' %}">
+        <img src="{% static 'svgs/elephant.svg' %}" width="28" height="28" alt="logo">
+       <span class="fw-bold">WILD</span> 
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,9 +27,9 @@
               Plants
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Species</a></li>
-              <li><a class="dropdown-item" href="#">Locations</a></li>
-              <li><a class="dropdown-item" href="#">Medecinal Plants</a></li>
+              <li><a class="dropdown-item" href="{% url 'plant-species' %}">Species</a></li>
+              <li><a class="dropdown-item" href="{% url 'plants-locations' %}">Locations</a></li>
+              <li><a class="dropdown-item" href="{% url 'medicinal-plants' %}">Medecinal Plants</a></li>
             </ul>
           </li>
 

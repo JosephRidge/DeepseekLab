@@ -1,6 +1,8 @@
 # DeepseekLab
 
+## **Geneal Architecture**
 
+![alt text](image-7.png)
 
 ![alt text](image.png)
 

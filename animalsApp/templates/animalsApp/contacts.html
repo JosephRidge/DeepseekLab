@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div>
+    <!-- title -->
+    <!--  description -->
+    <!-- <p class="lead fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis ducimus odio est earum maxime
+        repellendus explicabo vitae tenetur quisquam possimus quasi numquam libero voluptates velit iusto amet, magni
+        perferendis?</p> -->
+    <!-- form -->
+
+    <div class="d-flex justify-content-center align-items-center">
+ 
+
+    <img class="w-50" src="{% static 'svgs/form_image.svg' %}" alt="" srcset="">
+ 
+    <form class="w-50">
+                <h1 class="display-6 fw-bold mb-3"><span class="bg-warning rounded-start-5 ps-2">Contact </span> <span class="bg-dark text-warning rounded-end-5 pe-2">Us</span></h1>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div> 
+       
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+            <textarea type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+            <div id="emailHelp" class="form-text">We will respond as fast as we can.</div>
+        </div> 
+        <button type="submit" class="btn btn-warning rounded-pill px-5">Submit</button>
+    </form>
+   </div>
+</div>
+
+{% endblock %}

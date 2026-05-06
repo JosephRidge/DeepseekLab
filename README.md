@@ -11,3 +11,14 @@
 ## **Databases intro:**
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+
+
+
+## **Steps:**
+
+- Create model for the table for instance we will create a table called 'plants'
+- syntax: 
+    ```
+        class Plant(models.Model):
+            # <!-- attributes of the model -->
+    ```

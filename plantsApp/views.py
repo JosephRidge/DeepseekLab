@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Student
 
 # Create your views here.
 def home(request):
@@ -11,7 +12,8 @@ def about(request):
  
 
 def species(request):
-    context = { }
+    students = Student.objects.all()
+    context = {"data":students }
     return render(request,"plantsApp/species.html", context) 
 
 

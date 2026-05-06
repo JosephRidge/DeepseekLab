@@ -1,3 +1,7 @@
-from django.contrib import admin
+from django.contrib import admin 
 
-# Register your models here.
+#  import the models 
+from .models import Animal
+
+#  register the models in the admin panel 
+admin.site.register(Animal)

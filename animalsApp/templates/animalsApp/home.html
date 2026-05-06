@@ -9,5 +9,27 @@ alt="" size="400"   height="400px"  srcset="">
 <p class="lead fw-light mt-2 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem cum blanditiis quasi perferendis magni dolore culpa
     soluta nulla, nam molestias, ut aperiam voluptas ratione sunt. Voluptatum alias odit labore id!</p>
 
-<img src="{% static 'svgs/undraw_friends_xscy.svg' %}" alt="" height="400" srcset="">
+
+    <!-- animals start -->
+    
+
+ <div class="d-flex">
+    {% for animal in data %} 
+
+    <div class="card" style="width: 18rem;">
+        <img src="{{animal.image}}" class="card-img-top object-fit-cover" alt="..." width="200px" height="200px">
+        <div class="card-body">
+            <div class="fs-4 fw-bold">{{animal.name}}</div>
+            <h6 class="fs-6 text-secondary">{{animal.specie}}</h6>
+          <p class="card-text lead fs-6 text-truncate" style="max-width: 200px;">{{animal.bio}}</p>
+        </div>
+      </div>
+
+ {% endfor %}
+ </div>
+     <!-- animals end -->
+
+
+
+<img src="{% static 'svgs/undraw_friends_xscy.svg' %}" alt="" height="200" srcset="">
     {% endblock %}

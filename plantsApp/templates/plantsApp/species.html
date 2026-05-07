@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
 
-{% block content %}
-{{data}}
+{% block content %} 
+  
+  {% for car in data %}
+    <h3>{{car.name}}</h3>
+    <p>{{car.description}}</p>
+    <h5>fuel type: 
+
+        {% if car.fuelType == "D" %}
+        Diesel
+        {% else %}
+        Petrol
+        {% endif %}
+<hr>
+  {% endfor %}
+
 {% endblock %}

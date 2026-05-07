@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Student
+from .models import Car 
 
 # Create your views here.
 def home(request):
@@ -12,8 +12,8 @@ def about(request):
  
 
 def species(request):
-    students = Student.objects.all()
-    context = {"data":students }
+    cars  = Car.objects.all() # fetch all the data from the Car table => SELECT * FROM Car 
+    context = {"data": cars }
     return render(request,"plantsApp/species.html", context) 
 
 
